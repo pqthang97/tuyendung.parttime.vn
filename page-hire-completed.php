@@ -12,16 +12,16 @@ get_header();
 <div class="landing_main_wrapper">
          <div class="landing_header for_scrolling for_areas">
             <div class="landing_wrapper">
-               <a href="#" class="landing_mobile_menu_icon js_show_mobile_menu"></a>
-               <a class="landing_logo" href="../../index.html">
-               parttime
+               <a href="/" class="landing_mobile_menu_icon js_show_mobile_menu"></a>
+               <a class="landing_logo" href="/">
+               Parttime.vn
                </a>
                <ul class="landing_menu">
                   <li class="landing_menu_element">
-                     <a class="landing_menu_link" href="/areas-of-activity">Activity areas</a>
+                     <a class="landing_menu_link" href="/areas-of-activity">Mẫu vị trí tuyển dụng</a>
                   </li>
                   <li class="landing_menu_element">
-                     <a class="landing_menu_link with_dropdown js_contact_link" href="#">Contact</a>
+                     <a class="landing_menu_link with_dropdown js_contact_link">Liên lạc</a>
                      <div class="contact_popup js_contact_popup">
                         <div class="contact_popup_item">
                            <span class="contact_popup_item_heading">
@@ -43,14 +43,16 @@ get_header();
                         </div>
                      </div>
                   </li>
+				  <?php /*
                   <li class="landing_menu_element">
-                     <a class="landing_menu_link" href="">I want to work</a>
+                     <a class="landing_menu_link" href="//parttime.vn">Tôi muốn tìm việc</a>
+                  </li> */
+				  ?>
+                  <li class="landing_menu_element">
+                     <a class="landing_menu_link" href="//blog.parttime.vn">Blog</a>
                   </li>
                   <li class="landing_menu_element">
-                     <a class="landing_menu_link" href="">Log in</a>
-                  </li>
-                  <li class="landing_menu_element">
-                     <a class="landing_menu_link_button" href="">Get started</a>
+                     <a class="landing_menu_link_button" href="http://go.parttime.vn/create-job-request">Đăng tuyển</a>
                   </li>
                </ul>
             </div>
@@ -77,7 +79,7 @@ get_header();
                         </strong>
                         <br>
                         <strong class="big">
-                        <a href="">support@parttime.vn</a>
+                        <a href="mailto:support@parttime.vn">support@parttime.vn</a>
                         </strong>
                      </p>
                   </div>
@@ -110,7 +112,7 @@ get_header();
                      <p>
                         Chúng tôi sẵng sàng để đồng hành cùng bạn trong quá trình tuyển chọn
                      </p>
-                     <a href="../first_step/new">Gởi thêm yêu cầu tuyển dụng</a>
+                     <a href="http://go.parttime.vn/create-job-request">Gởi thêm yêu cầu tuyển dụng</a>
                   </div>
                   <p class="landing_hire_form_success_contact for_mobile">
                      <strong>
@@ -124,7 +126,7 @@ get_header();
                      </strong>
                      <br>
                      <strong class="big">
-                     <a href="">support@parttime.vn</a>
+                     <a href="mailto:support@parttime.vn">support@parttime.vn</a>
                      </strong>
                   </p>
                </div>
