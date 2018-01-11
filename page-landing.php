@@ -44,8 +44,8 @@ get_header();
                            Hỗ trợ:
                            </span>
                            <span class="contact_popup_item_content">
-                           <a href="http://support.parttime.vn">
-                           Support.Parttime.vn
+                           <a target="_blank" href="http://support.parttime.vn">
+                           Trung tâm trợ giúp
                            </a>
                            </span>
                         </div>
@@ -101,8 +101,8 @@ get_header();
                            Hỗ trợ:
                            </span>
                            <span class="contact_popup_item_content">
-                           <a href="http://support.parttime.vn">
-                           Support.Parttime.vn
+                           <a target="_blank" href="http://support.parttime.vn">
+                           Trung tâm trợ giúp
                            </a>
                            </span>
                         </div>
