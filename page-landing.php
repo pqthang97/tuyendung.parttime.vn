@@ -119,7 +119,7 @@ get_header();
                      <a target="_blank" class="landing_menu_link" href="//blog.parttime.vn">Blog</a>
                   </li>
                   <li class="landing_menu_element">
-                     <a class="landing_menu_link_button" href="http://go.parttime.vn/create-job-request">Bắt đầu</a>
+                     <a class="landing_menu_link_button" href="http://go.parttime.vn/create-job-request">Đăng tuyển</a>
                   </li>
                </ul>
             </div>
@@ -335,7 +335,7 @@ get_header();
                      </h2>
                      <p class="landing_paragraph">
                         Tuyển dụng trực quan với hồ sơ, video ứng viên rõ ràng và những nhận xét từ đồng nghiệp cũ của họ giúp cho bạn có nguồn thông tin đáng tin cậy.
-                        <a class="landing_start_link" href="http://go.parttime.vn/create-job-request">Bắt đầu ngay &#8250;</a>
+                        <a class="landing_start_link" href="http://go.parttime.vn/create-job-request">Đăng tuyển ngay &#8250;</a>
                      </p>
                   </div>
                   <img class="landing_qualified_employees_image" src="<?php echo get_template_directory_uri(); ?>/assets/landing/qualified_employees.png" alt="Ứng tiên năng động, tiềm năng" />
@@ -383,7 +383,7 @@ get_header();
                </h2>
                <p class="landing_paragraph">
 				  Chúng tôi phỏng vấn, đánh giá, đào tạo họ cho bạn. Chúng tôi có đội ngũ chuyên gia đa lĩnh vực và cung cấp cho bạn giải pháp đầy đủ cho việc tuyển dụng nhân sự parttime.
-                  <a class="landing_start_link" href="http://go.parttime.vn/create-job-request">Bắt đầu &#8250;</a>
+                  <a class="landing_start_link" href="http://go.parttime.vn/create-job-request">Đăng tuyển &#8250;</a>
                </p>
             </div>
          </section>
@@ -396,7 +396,7 @@ get_header();
                      </h2>
                      <p class="landing_paragraph">
                         Chúng tôi đảm nhiệm hợp đồng lao động, trả lương, các phụ phí và xuất hóa đơn cho bạn với mọi thông tin rõ ràng và minh bạch. Bạn có thể xem, quản lý từ xa để thấy rõ được mọi thông tin về nguồn lực thuê parttime.
-                        <a class="landing_start_link" href="http://go.parttime.vn/create-job-request">Bắt đầu &#8250;</a>
+                        <a class="landing_start_link" href="http://go.parttime.vn/create-job-request">Đăng tuyển &#8250;</a>
                      </p>
                   </div>
                   <img class="landing_digitalized_process_image for_uk" src="<?php echo get_template_directory_uri(); ?>/assets/landing/site_screenshot_vn.png" alt="Hệ thống quản lý nhân sự parttime" />
