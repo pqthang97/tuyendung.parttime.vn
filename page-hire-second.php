@@ -48,7 +48,7 @@ get_header();
 <div class="landing_main_wrapper">
          <div class="landing_header for_scrolling for_areas">
             <div class="landing_wrapper">
-               <a href="#" class="landing_mobile_menu_icon js_show_mobile_menu"></a>
+               <a href="/" class="landing_mobile_menu_icon js_show_mobile_menu"></a>
                <a class="landing_logo" href="/">
                Parttime.vn
                </a>
@@ -136,7 +136,7 @@ get_header();
                            <br>
                            <a href="tel:+84938373899">+84938373899</a>
                            <br>
-                           <a href="">support@parttime.vn</a>
+                           <a href="mailto:support@parttime.vn">support@parttime.vn</a>
                         </div>
                      </div>
                      <input type="submit" name="commit" value="Gởi yêu cầu tuyển dụng" class="landing_hire_form_submit" tabindex="10"/>
