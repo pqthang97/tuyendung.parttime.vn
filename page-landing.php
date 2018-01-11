@@ -39,7 +39,7 @@ get_header();
                            </a>
                            </span>
                         </div>
-						<div class="contact_popup_item">
+			<div class="contact_popup_item">
                            <span class="contact_popup_item_heading">
                            Hỗ trợ:
                            </span>
@@ -57,7 +57,7 @@ get_header();
                   </li> */
 				  ?>
 				  <li class="landing_menu_element">
-                     <a class="landing_menu_link" href="//blog.parttime.vn">Blog</a>
+                     <a target="_blank" class="landing_menu_link" href="//blog.parttime.vn">Blog</a>
                   </li>
                   <li class="landing_menu_element">
                      <a class="landing_menu_link" href="http://go.parttime.vn/create-job-request">Đăng tuyển</a>
@@ -96,7 +96,7 @@ get_header();
                            </a>
                            </span>
                         </div>
-						<div class="contact_popup_item">
+			<div class="contact_popup_item">
                            <span class="contact_popup_item_heading">
                            Hỗ trợ:
                            </span>
@@ -116,7 +116,7 @@ get_header();
                   </li> */
 				  ?>
                   <li class="landing_menu_element">
-                     <a class="landing_menu_link" href="//blog.parttime.vn">Blog</a>
+                     <a target="_blank" class="landing_menu_link" href="//blog.parttime.vn">Blog</a>
                   </li>
                   <li class="landing_menu_element">
                      <a class="landing_menu_link_button" href="http://go.parttime.vn/create-job-request">Bắt đầu</a>
