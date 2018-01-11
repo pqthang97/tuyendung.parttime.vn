@@ -1,13 +1,13 @@
 <div class="landing_main_wrapper">
   <div class="landing_header for_scrolling for_areas">
     <div class="landing_wrapper">
-        <a href="#" class="landing_mobile_menu_icon js_show_mobile_menu"></a>
+        <a href="/" class="landing_mobile_menu_icon js_show_mobile_menu"></a>
         <a class="landing_logo" href="<?php echo get_site_url(); ?>">
         Parttime.vn
         </a>
         <ul class="landing_menu">
           <li class="landing_menu_element">
-              <a class="landing_menu_link" href="<?php echo get_site_url(); ?>/areas-of-activity">Các mẫu công việc</a>
+              <a class="landing_menu_link" href="<?php echo get_site_url(); ?>/areas-of-activity">Mẫu vị trí tuyển dụng</a>
           </li>
           <li class="landing_menu_element">
               <a class="landing_menu_link with_dropdown js_contact_link" href="<?php echo get_site_url(); ?>">Liên lạc</a>
@@ -48,7 +48,7 @@
           </li> */
 		  ?>
           <li class="landing_menu_element">
-              <a class="landing_menu_link" href="//blog.parttime.vn">Blog</a>
+              <a target="_blank" class="landing_menu_link" href="//blog.parttime.vn">Blog</a>
           </li>
           <li class="landing_menu_element">
               <a class="landing_menu_link_button" href="http://go.parttime.vn/create-job-request">Đăng tuyển</a>
