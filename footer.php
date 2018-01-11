@@ -12,13 +12,13 @@
                         Công ty
                      </li>
                      <li class="landing_footer_menu_list_element">
-                        <a class="landing_footer_menu_list_link" target="_blank" href="">Giới thiệu</a>
+                        <a class="landing_footer_menu_list_link" target="_blank" href="http://go.parttime.vn/gioi-thieu">Giới thiệu</a>
                      </li>
                      <li class="landing_footer_menu_list_element">
-                        <a class="landing_footer_menu_list_link" target="_blank" href="http://blog.parttime.vn/nha-tuyen-dung">Blog tuyển dụng</a>
+                        <a class="landing_footer_menu_list_link" target="_blank" href="http://go.parttime.vn/blog-tuyen-dung">Blog tuyển dụng</a>
                      </li>
                      <li class="landing_footer_menu_list_element">
-                        <a class="landing_footer_menu_list_link" target="_blank" href="">Tham gia Parttime.vn</a>
+                        <a class="landing_footer_menu_list_link" target="_blank" href="http://go.parttime.vn/tham-gia-parttime-team">Tham gia Parttime.vn</a>
                      </li>
                   </ul>
                   <ul class="landing_footer_menu_list">
@@ -26,10 +26,10 @@
                         Sản phẩm
                      </li>
                      <li class="landing_footer_menu_list_element">
-                        <a class="landing_footer_menu_list_link" href="areas-of-activity.html">Danh mục công việc</a>
+                        <a class="landing_footer_menu_list_link" href="/areas-of-activity">Danh mục công việc</a>
                      </li>
                      <li class="landing_footer_menu_list_element">
-                        <a class="landing_footer_menu_list_link" target="_blank" href="">Trung tâm trợ giúp</a>
+                        <a class="landing_footer_menu_list_link" target="_blank" href="http://support.parttime.vn">Trung tâm trợ giúp</a>
                      </li>
                   </ul>
                   <ul class="landing_footer_menu_list">
@@ -37,10 +37,10 @@
                         Pháp lý
                      </li>
                      <li class="landing_footer_menu_list_element">
-                        <a class="landing_footer_menu_list_link" href="terms-and-privacy.html">Thỏa thuận sử dụng</a>
+                        <a class="landing_footer_menu_list_link" href="/terms-and-privacy">Thỏa thuận sử dụng</a>
                      </li>
                      <li class="landing_footer_menu_list_element">
-                        <a class="landing_footer_menu_list_link" href="cookies.html">Quy tắc hoạt động</a>
+                        <a class="landing_footer_menu_list_link" href="/privacy-policy">Quy tắc hoạt động</a>
                      </li>
                   </ul>
                   <ul class="landing_footer_menu_list for_mobile">
@@ -119,11 +119,13 @@
                         </a>
                         <ul id="locale_dropdown" class="landing_footer_menu_list_languages">
                            <li class="landing_footer_menu_list_language_link_wrapper">
-                              <a href="index-country_code=mx&amp;locale=es-MX.html"><span class="m_flag m_flag_vn"></span>Tiếng Việt</a>
+                              <a><span class="m_flag m_flag_vn"></span>Tiếng Việt</a>
                            </li>
-                           <li class="landing_footer_menu_list_language_link_wrapper">
+                           <?php /*
+						   <li class="landing_footer_menu_list_language_link_wrapper">
                               <a href="index-country_code=uk&amp;locale=en.html"><span class="m_flag m_flag_gb"></span>English</a>
-                           </li>
+                           </li> */
+						   ?>
                         </ul>
                      </li>
                   </ul>
@@ -135,15 +137,15 @@
          </div>
          <div class="landing_mobile_menu landing_wrapper for_mobile js_mobile_menu">
             <a href="terms-and-privacy.html#" class="landing_mobile_menu_icon for_close js_close_mobile_menu"></a>
-            <a class="landing_logo for_mobile_menu" href="index.html">
-            parttime
+            <a class="landing_logo for_mobile_menu" href="/">
+            Parttime.vn
             </a>
             <ul class="landing_menu for_mobile_menu">
                <li class="landing_menu_element">
-                  <a class="landing_menu_link" href="areas-of-activity.html">Các mẫu công việc</a>
+                  <a class="landing_menu_link" href="areas-of-activity">Các mẫu công việc</a>
                </li>
                <li class="landing_menu_element">
-                  <a class="landing_menu_link with_dropdown js_contact_link" href="terms-and-privacy.html#">Liên lạc</a>
+                  <a class="landing_menu_link with_dropdown js_contact_link" href="#">Liên lạc</a>
                   <div class="contact_popup js_contact_popup">
                      <div class="contact_popup_item">
                         <span class="contact_popup_item_heading">
@@ -166,13 +168,13 @@
                   </div>
                </li>
                <li class="landing_menu_element">
-                  <a class="landing_menu_link" href="candidates-hide_user_select=true.html">Tôi muốn tìm việc</a>
+                  <a class="landing_menu_link" href="//parttime.vn">Tôi muốn tìm việc</a>
                </li>
                <li class="landing_menu_element">
-                  <a class="landing_menu_link" href="https://companies.parttime.com/sign_in?locale=en">Đăng nhập</a>
+                  <a class="landing_menu_link" href="//blog.parttime.vn">Blog</a>
                </li>
                <li class="landing_menu_element">
-                  <a class="landing_menu_link_button" href="hire_enquiries/first_step/new.html">Đặt tuyển</a>
+                  <a class="landing_menu_link_button" href="/hire_first">Đăng việc làm</a>
                </li>
             </ul>
          </div>
