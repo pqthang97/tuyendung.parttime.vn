@@ -347,7 +347,7 @@ get_header();
                            </p>
                         </div>
                      </div>
-                     <input type="submit" name="commit" value="Tiếp tục" class="landing_hire_form_submit js_submit_hire_form" tabindex="17" data-alt-text="Send request" data-disable-with="Continue" />
+                     <input type="submit" name="commit" value="Tiếp tục" class="landing_hire_form_submit js_submit_hire_form" tabindex="17" data-alt-text="Gởi yêu cầu tuyển dụng" data-disable-with="Tiếp tục" />
                      <p class="landing_hire_form_inputs_explanation for_mobile">
 						Hãy luôn đảm bảo quyền lợi và hỗ trợ người lao động để họ có điều kiện làm việc tốt nhất.
                      </p>
