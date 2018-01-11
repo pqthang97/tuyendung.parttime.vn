@@ -40,7 +40,7 @@ get_header();
   </div>
 
   <div id="options">
-    <a href="https://parttime.zendesk.com" id="dashboard">
+    <a href="http://support.parttime.vn" id="dashboard">
       <div class="ico"></div>
       <div class="text">Trung tâm hỗ trợ</div>
     </a>
@@ -62,7 +62,7 @@ get_header();
           <li><a href="/">Tiếng Việt</a></li>
       </ul>
 
-      <a href="/" class="pull-right hide-text hidden_on_mobile sprited sprited-footer_logo" id="logo_footer" title="home">parttime</a>
+      <a href="/" class="pull-right hide-text hidden_on_mobile sprited sprited-footer_logo" id="logo_footer" title="Parttime.vn">Parttime.vn</a>
       <div id="copy" class="pull-right hidden_on_mobile">© 2018 Parttime, Inc. All rights reserved.</div>
     </div>
   </div> <!-- #footer_small -->
