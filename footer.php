@@ -112,7 +112,7 @@
                         Ngôn ngữ
                      </li>
                      <li class="landing_footer_menu_list_element">
-                        <a href="index.html#" id="locale_dropdown_toggler" class="landing_footer_menu_list_language_link">
+                        <a id="locale_dropdown_toggler" class="landing_footer_menu_list_language_link">
                         <span class="m_flag m_flag_vn"></span>
                         Tiếng Việt
                         <span class="landing_footer_menu_list_language_arrow"></span>
@@ -123,7 +123,7 @@
                            </li>
                            <?php /*
 						   <li class="landing_footer_menu_list_language_link_wrapper">
-                              <a href="index-country_code=uk&amp;locale=en.html"><span class="m_flag m_flag_gb"></span>English</a>
+                              <a><span class="m_flag m_flag_gb"></span>English</a>
                            </li> */
 						   ?>
                         </ul>
@@ -136,7 +136,7 @@
             </div>
          </div>
          <div class="landing_mobile_menu landing_wrapper for_mobile js_mobile_menu">
-            <a href="terms-and-privacy.html#" class="landing_mobile_menu_icon for_close js_close_mobile_menu"></a>
+            <a href="/" class="landing_mobile_menu_icon for_close js_close_mobile_menu"></a>
             <a class="landing_logo for_mobile_menu" href="/">
             Parttime.vn
             </a>
