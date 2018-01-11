@@ -37,7 +37,7 @@
                         Pháp lý
                      </li>
                      <li class="landing_footer_menu_list_element">
-                        <a class="landing_footer_menu_list_link" href="/term-of-use">Thỏa thuận sử dụng</a>
+                        <a class="landing_footer_menu_list_link" href="/terms-of-use">Thỏa thuận sử dụng</a>
                      </li>
                      <li class="landing_footer_menu_list_element">
                         <a class="landing_footer_menu_list_link" href="/privacy-policy">Quy tắc hoạt động</a>
@@ -183,7 +183,7 @@
                </li> */
 			   ?>
                <li class="landing_menu_element">
-                  <a class="landing_menu_link" href="//blog.parttime.vn">Blog</a>
+                  <a target="_blank" class="landing_menu_link" href="//blog.parttime.vn">Blog</a>
                </li>
                <li class="landing_menu_element">
                   <a class="landing_menu_link_button" href="http://go.parttime.vn/create-job-request">Đăng việc làm</a>
