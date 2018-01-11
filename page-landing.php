@@ -143,7 +143,7 @@ get_header();
                      Chúng tôi là "bộ phận nhân sự" đáng tin cậy của bạn
                   </li>
                </ul>
-               <a class="landing_top_section_cta" href="http://go.parttime.vn/create-job-request">Đặt tuyển</a>
+               <a class="landing_top_section_cta" href="http://go.parttime.vn/create-job-request">Đăng tuyển</a>
                <div class="sprite sprite_companies_banner_uk"></div>
             </div>
          </section>
