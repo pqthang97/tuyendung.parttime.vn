@@ -172,7 +172,7 @@ include('header-menu.php');
                            <p>
                               Chúng tôi là chuyên gia trong mảng tuyển dụng parttime, hãy liên lạc với chúng tôi để được tư vấn thêm về nhu cầu tuyển dụng của bạn.
                            </p>
-                           <a href="" class="landing_area_of_activity_explanation_link">
+                           <a href="mailto:support@parttime.vn" class="landing_area_of_activity_explanation_link">
                            support@parttime.vn
                            </a>
                            <br>
