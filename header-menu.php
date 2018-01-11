@@ -10,7 +10,7 @@
               <a class="landing_menu_link" href="<?php echo get_site_url(); ?>/areas-of-activity">Các mẫu công việc</a>
           </li>
           <li class="landing_menu_element">
-              <a class="landing_menu_link with_dropdown js_contact_link">Liên lạc</a>
+              <a class="landing_menu_link with_dropdown js_contact_link" href="<?php echo get_site_url(); ?>">Liên lạc</a>
               <div class="contact_popup js_contact_popup">
                 <div class="contact_popup_item">
                     <span class="contact_popup_item_heading">
@@ -30,6 +30,16 @@
                     </a>
                     </span>
                 </div>
+				<div class="contact_popup_item">
+				   <span class="contact_popup_item_heading">
+				   Hỗ trợ:
+				   </span>
+				   <span class="contact_popup_item_content">
+				   <a target="_blank" href="http://support.parttime.vn">
+				   Trung tâm trợ giúp
+				   </a>
+				   </span>
+				</div>
               </div>
           </li>
 		  <?php /*
