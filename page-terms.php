@@ -59,7 +59,7 @@ get_header();
                      <a class="landing_menu_link" target="_blank" href="//blog.parttime.vn">Blog</a>
                   </li>
                   <li class="landing_menu_element">
-                     <a class="landing_menu_link_button" href="http://go.parttime.vn/create-job-request">Đặt tuyển</a>
+                     <a class="landing_menu_link_button" href="http://go.parttime.vn/create-job-request">Đăng tuyển</a>
                   </li>
                </ul>
             </div>
