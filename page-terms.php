@@ -9,23 +9,23 @@ get_header();
 <div class="landing_main_wrapper">
          <div class="landing_header for_scrolling for_areas">
             <div class="landing_wrapper">
-               <a href="terms-and-privacy.html#" class="landing_mobile_menu_icon js_show_mobile_menu"></a>
-               <a class="landing_logo" href="index.html">
-               parttime.vn
+               <a href="/" class="landing_mobile_menu_icon js_show_mobile_menu"></a>
+               <a class="landing_logo" href="/">
+               Parttime.vn
                </a>
                <ul class="landing_menu">
                   <li class="landing_menu_element">
-                     <a class="landing_menu_link" href="#">Các mẫu công việc</a>
+                     <a class="landing_menu_link" href="<?php echo get_site_url(); ?>/areas-of-activity">Các mẫu công việc</a>
                   </li>
                   <li class="landing_menu_element">
-                     <a class="landing_menu_link with_dropdown js_contact_link" href="terms-and-privacy.html#">Liên lạc</a>
+                     <a class="landing_menu_link with_dropdown js_contact_link" href="<?php echo get_site_url(); ?>">Liên lạc</a>
                      <div class="contact_popup js_contact_popup">
                         <div class="contact_popup_item">
                            <span class="contact_popup_item_heading">
                            Email:
                            </span>
                            <span class="contact_popup_item_content">
-                           <a href="">support@parttime.vn</a>
+                           <a href="mailto:support@parttime.vn">support@parttime.vn</a>
                            </span>
                         </div>
                         <div class="contact_popup_item">
@@ -38,16 +38,28 @@ get_header();
                            </a>
                            </span>
                         </div>
+						<div class="contact_popup_item">
+						   <span class="contact_popup_item_heading">
+						   Hỗ trợ:
+						   </span>
+						   <span class="contact_popup_item_content">
+						   <a target="_blank" href="http://support.parttime.vn">
+						   Trung tâm trợ giúp
+						   </a>
+						   </span>
+						</div>
                      </div>
                   </li>
+				  <?php /*
                   <li class="landing_menu_element">
-                     <a class="landing_menu_link" href="candidates-hide_user_select=true.html">Tôi muốn tìm việc</a>
+                     <a class="landing_menu_link" href="//parttime.vn">Tôi muốn tìm việc</a>
+                  </li> */
+				  ?>
+                  <li class="landing_menu_element">
+                     <a class="landing_menu_link" target="_blank" href="//blog.parttime.vn">Blog</a>
                   </li>
                   <li class="landing_menu_element">
-                     <a class="landing_menu_link" href="">Đăng nhập</a>
-                  </li>
-                  <li class="landing_menu_element">
-                     <a class="landing_menu_link_button" href="hire_enquiries/first_step/new.html">Đặt tuyển</a>
+                     <a class="landing_menu_link_button" href="http://go.parttime.vn/create-job-request">Đặt tuyển</a>
                   </li>
                </ul>
             </div>
