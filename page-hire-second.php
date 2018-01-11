@@ -6,8 +6,7 @@
 $wp_session = WP_Session::get_instance();
 
 $HAPI = '7019d438-f263-4c4c-82d4-1d2f770d731e';
-if(!isset($wp_session['job_template']) || $wp_session['job_template'] == 0)
-  wp_redirect(get_site_url());
+
 
 if(isset($_POST['commit'])) {
   $job = $_POST['hire_enquiry'];

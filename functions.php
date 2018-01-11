@@ -401,3 +401,14 @@ function custom_taxonomy() {
 
 }
 add_action( 'init', 'custom_taxonomy', 0 );
+
+
+function jobrequest_rewrite_tag() {
+	add_rewrite_tag( '%job-request%', '([^&]+)' );
+}
+add_action('init', 'jobrequest_rewrite_tag', 10, 0);
+
+function jobrequest_rewrite_rule() {
+	add_rewrite_rule( '^job-request/([^/]*)/?', 'index.php?post_type=job_template&slug=$matches[1]','top' );
+}
+add_action('init', 'jobrequest_rewrite_rule', 10, 0);

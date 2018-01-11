@@ -4,8 +4,7 @@
  */
 
 $wp_session = WP_Session::get_instance();
-if(!isset($wp_session['job_template']) || $wp_session['job_template'] == 0)
-  wp_redirect(get_site_url());
+
 $wp_session['job_template'] = 0;
 get_header();
 ?>

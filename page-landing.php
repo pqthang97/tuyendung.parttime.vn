@@ -156,158 +156,70 @@ get_header();
                   <p class="landing_paragraph centered">
                      Hãy chọn vị trí mà bạn đang tuyển theo nhóm công việc bên dưới, chúng tôi hỗ trợ bạn tuyển dụng nhanh chóng. Chúng tôi là chuyên gia trong lĩnh vực việc làm parttime.
                   </p>
+                  <?php
+                        $categories = get_terms( array(
+                                'orderby' => 'ID',
+                                'taxonomy' => 'jobtemplate_category',
+                                'order'   => 'ASC',
+                                'hide_empty' => 0 
+                              ) );
+                  ?>
                   <div class="landing_areas_of_activity_wrapper">
                      <ul class="landing_areas_of_activity js_areas_wrapper second_areas">
-                        <li class="landing_area_of_activity">
-                           <span class="landing_area_of_activity_badge sprite sprite_icon_hostelry"></span>
-                           <h3 class="landing_area_of_activity_title">
-                              Nhà hàng & Khách sạn
-                           </h3>
-                           <ul class="landing_area_of_activity_employments_list">
-                              <li class="landing_area_of_activity_employments_list_element">
-                                 <span class="landing_area_of_activity_check hostelry"></span>
-                                 Bếp
-                              </li>
-                              <li class="landing_area_of_activity_employments_list_element">
-                                 <span class="landing_area_of_activity_check hostelry"></span>
-                                 Pha chế
-                              </li>
-                              <li class="landing_area_of_activity_employments_list_element">
-                                 <span class="landing_area_of_activity_check hostelry"></span>
-                                 Phục vụ/Dọn phòng
-                              </li>
-                              <li class="landing_area_of_activity_employments_list_element">
-                                 <span class="landing_area_of_activity_check hostelry"></span>
-                                 Điều phối
-                              </li>
-                           </ul>
-                           <a class="landing_area_of_activity_link" href="areas-of-activity.html#hostelry">Xem thêm</a>
-                        </li>
-                        <li class="landing_area_of_activity">
-                           <span class="landing_area_of_activity_badge sprite sprite_icon_logistics"></span>
-                           <h3 class="landing_area_of_activity_title">
-                              Giao nhận
-                           </h3>
-                           <ul class="landing_area_of_activity_employments_list">
-                              <li class="landing_area_of_activity_employments_list_element">
-                                 <span class="landing_area_of_activity_check logistics"></span>
-                                 Xử lý đơn hàng
-                              </li>
-                              <li class="landing_area_of_activity_employments_list_element">
-                                 <span class="landing_area_of_activity_check logistics"></span>
-                                 Vận hành
-                              </li>
-                              <li class="landing_area_of_activity_employments_list_element">
-                                 <span class="landing_area_of_activity_check logistics"></span>
-                                 Kiểm kê hàng hóa
-                              </li>
-                              <li class="landing_area_of_activity_employments_list_element">
-                                 <span class="landing_area_of_activity_check logistics"></span>
-                                 Giao nhân
-                              </li>
-                           </ul>
-                           <a class="landing_area_of_activity_link" href="areas-of-activity.html#logistics">Xem thêm</a>
-                        </li>
-                        <li class="landing_area_of_activity">
-                           <span class="landing_area_of_activity_badge sprite sprite_icon_call_center"></span>
-                           <h3 class="landing_area_of_activity_title">
-                              Trung tâm trợ giúp khách hàng
-                           </h3>
-                           <ul class="landing_area_of_activity_employments_list">
-                              <li class="landing_area_of_activity_employments_list_element">
-                                 <span class="landing_area_of_activity_check call_center"></span>
-                                 Nhân viên kinh doanh
-                              </li>
-                              <li class="landing_area_of_activity_employments_list_element">
-                                 <span class="landing_area_of_activity_check call_center"></span>
-                                 Hỗ trợ khách hàng
-                              </li>
-                              <li class="landing_area_of_activity_employments_list_element">
-                                 <span class="landing_area_of_activity_check call_center"></span>
-                                 Hỗ trợ kỹ thuật
-                              </li>
-                              <li class="landing_area_of_activity_employments_list_element">
-                                 <span class="landing_area_of_activity_check call_center"></span>
-                                 Hành chính
-                              </li>
-                           </ul>
-                           <a class="landing_area_of_activity_link" href="areas-of-activity.html#call_center">Xem thêm</a>
-                        </li>
-                        <li class="landing_area_of_activity">
-                           <span class="landing_area_of_activity_badge sprite sprite_icon_events"></span>
-                           <h3 class="landing_area_of_activity_title">
-                              Sự kiện
-                           </h3>
-                           <ul class="landing_area_of_activity_employments_list">
-                              <li class="landing_area_of_activity_employments_list_element">
-                                 <span class="landing_area_of_activity_check events"></span>
-                                 Hostess
-                              </li>
-                              <li class="landing_area_of_activity_employments_list_element">
-                                 <span class="landing_area_of_activity_check events"></span>
-                                 Stewards
-                              </li>
-                              <li class="landing_area_of_activity_employments_list_element">
-                                 <span class="landing_area_of_activity_check events"></span>
-                                 Drivers
-                              </li>
-                              <li class="landing_area_of_activity_employments_list_element">
-                                 <span class="landing_area_of_activity_check events"></span>
-                                 Assemblers
-                              </li>
-                           </ul>
-                           <a class="landing_area_of_activity_link" href="areas-of-activity.html#events">Xem thêm</a>
-                        </li>
-                        <li class="landing_area_of_activity">
-                           <span class="landing_area_of_activity_badge sprite sprite_icon_construction"></span>
-                           <h3 class="landing_area_of_activity_title">
-                              Construction
-                           </h3>
-                           <ul class="landing_area_of_activity_employments_list">
-                              <li class="landing_area_of_activity_employments_list_element">
-                                 <span class="landing_area_of_activity_check construction"></span>
-                                 Builders
-                              </li>
-                              <li class="landing_area_of_activity_employments_list_element">
-                                 <span class="landing_area_of_activity_check construction"></span>
-                                 Carpenters
-                              </li>
-                              <li class="landing_area_of_activity_employments_list_element">
-                                 <span class="landing_area_of_activity_check construction"></span>
-                                 Electricians
-                              </li>
-                              <li class="landing_area_of_activity_employments_list_element">
-                                 <span class="landing_area_of_activity_check construction"></span>
-                                 Plumbers
-                              </li>
-                           </ul>
-                           <a class="landing_area_of_activity_link" href="areas-of-activity.html#construction">Xem thêm</a>
-                        </li>
-                        <li class="landing_area_of_activity">
-                           <span class="landing_area_of_activity_badge sprite sprite_icon_retail"></span>
-                           <h3 class="landing_area_of_activity_title">
-                              Bán lẻ
-                           </h3>
-                           <ul class="landing_area_of_activity_employments_list">
-                              <li class="landing_area_of_activity_employments_list_element">
-                                 <span class="landing_area_of_activity_check retail"></span>
-                                 Thu ngân
-                              </li>
-                              <li class="landing_area_of_activity_employments_list_element">
-                                 <span class="landing_area_of_activity_check retail"></span>
-                                 Nhân viên kinh doanh
-                              </li>
-                              <li class="landing_area_of_activity_employments_list_element">
-                                 <span class="landing_area_of_activity_check retail"></span>
-                                 Quản lý cửa hàng
-                              </li>
-                              <li class="landing_area_of_activity_employments_list_element">
-                                 <span class="landing_area_of_activity_check retail"></span>
-                                 Quản lý kho hàng
-                              </li>
-                           </ul>
-                           <a class="landing_area_of_activity_link" href="areas-of-activity.html#retail">Xem thêm</a>
-                        </li>
+                                <?php
+                                foreach($categories as $key => $category) {
+                                    if($category->name === 'Uncategorized')
+                                        continue;
+                                $color_start = get_field('color_start', $category);
+                                $icon = get_field('icon', $category);
+                                $args = array(
+                                        'posts_per_page'   => 5,
+                                        'offset'           => 0,
+                                        'tax_query' => array(
+                                          array(
+                                            'taxonomy' => 'jobtemplate_category',
+                                            'field' => 'term_id',
+                                            'terms' => $category->term_id, // Where term_id of Term 1 is "1".
+                                            'include_children' => false
+                                          )
+                                          ),
+                                        'post_type'        => 'job_template',
+                                        'post_mime_type'   => '',
+                                        'post_parent'      => '',
+                                        'author'	   => '',
+                                        'author_name'	   => '',
+                                        'orderby' => 'ID',
+                                'order'   => 'ASC',
+                                        'post_status'      => 'publish',
+                                        'suppress_filters' => true 
+                                      );
+                                      $posts_array = get_posts( $args );
+                                ?>
+                              <li class="landing_area_of_activity">
+                              <span class="landing_area_of_activity_badge sprite <?php echo $icon; ?>"></span>
+                              <h3 class="landing_area_of_activity_title">
+                                 <?php echo $category->name; ?>
+                              </h3>
+                              <ul class="landing_area_of_activity_employments_list">
+                              <?php 
+                              foreach($posts_array as $post) {
+                                ?>
+                                <li class="landing_area_of_activity_employments_list_element">
+                                    <span class="landing_area_of_activity_check logistics"></span>
+                                    <?php echo $post->post_title; ?>
+                                 </li>
+                                <?php
+                              }
+                              ?>
+                                 
+                              </ul>
+                              <a class="landing_area_of_activity_link" href="<?php echo get_site_url(); ?>/areas-of-activity#<?php echo $category->slug; ?>">Xem thêm</a>
+                           </li>
+                              
+                              <?php 
+                                }
+                               ?>
+                        
                      </ul>
                   </div>
                   <ul class="landing_areas_of_activity_buttons for_desktop">
@@ -335,7 +247,7 @@ get_header();
                      </h2>
                      <p class="landing_paragraph">
                         Tuyển dụng trực quan với hồ sơ, video ứng viên rõ ràng và những nhận xét từ đồng nghiệp cũ của họ giúp cho bạn có nguồn thông tin đáng tin cậy.
-                        <a class="landing_start_link" href="http://go.parttime.vn/create-job-request">Đăng tuyển ngay &#8250;</a>
+                        <a class="landing_start_link" href="http://go.parttime.vn/create-job-request/">Đăng tuyển ngay &#8250;</a>
                      </p>
                   </div>
                   <img class="landing_qualified_employees_image" src="<?php echo get_template_directory_uri(); ?>/assets/landing/qualified_employees.png" alt="Ứng tiên năng động, tiềm năng" />
