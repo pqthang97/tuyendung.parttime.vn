@@ -42,9 +42,9 @@ get_header();
 <div class="landing_main_wrapper">
          <div class="landing_header for_scrolling for_areas">
             <div class="landing_wrapper">
-               <a href="new.html#" class="landing_mobile_menu_icon js_show_mobile_menu"></a>
-               <a class="landing_logo" href="../../index.html">
-               parttime
+               <a href="/" class="landing_mobile_menu_icon js_show_mobile_menu"></a>
+               <a class="landing_logo" href="/">
+               Parttime.vn
                </a>
             </div>
          </div>
@@ -53,7 +53,7 @@ get_header();
                <div class="landing_wrapper">
                   <div class="landing_text_block wide">
                      <h1 class="landing_heading">
-                        Bắt đầu tuyển dụng
+                        Gởi yêu cầu tuyển dụng
                      </h1>
                   </div>
                </div>
@@ -62,8 +62,7 @@ get_header();
          <section class="landing_tilted_section for_hire_form">
             <div class="landing_tilted_content for_hire_form">
                <div class="landing_wrapper js_landing_selectize">
-                  <form  class="new_hire_enquiry" id="new_hire_enquiry" action="" accept-charset="UTF-8" method="post">
-                     
+                  <form  class="new_hire_enquiry" id="new_hire_enquiry" action="" accept-charset="UTF-8" method="post">                     
                      <h2 class="landing_hire_form_heading">
                         Mô tả công việc
                      </h2>
@@ -350,7 +349,7 @@ get_header();
                      </div>
                      <input type="submit" name="commit" value="Tiếp tục" class="landing_hire_form_submit js_submit_hire_form" tabindex="17" data-alt-text="Send request" data-disable-with="Continue" />
                      <p class="landing_hire_form_inputs_explanation for_mobile">
-                        Remember that such workers will be hired on our payroll and will be available at your disposal.
+						Hãy luôn đảm bảo quyền lợi và hỗ trợ người lao động để họ có điều kiện làm việc tốt nhất.
                      </p>
                   </form>
                </div>
