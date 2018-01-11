@@ -45,7 +45,7 @@ get_header();
                      <a class="landing_menu_link" href="<?php echo get_site_url(); ?>">Tôi muốn tìm việc</a>
                   </li>
                   <li class="landing_menu_element">
-                     <a class="landing_menu_link" href="">Đăng tuyển</a>
+                     <a class="landing_menu_link" href="http://go.parttime.vn/create-job-request">Đăng tuyển</a>
                   </li>
                </ul>
             </div>
@@ -83,16 +83,18 @@ get_header();
                         </div>
                      </div>
                   </li>
+				  <?php /*
                   <li class="landing_menu_element">
                      <a href="<?php echo get_site_url(); ?>#" class="landing_menu_link">
-                     <a class="landing_menu_link" href="candidate.html">Tôi muốn tìm việc</a>
+                     <a class="landing_menu_link" href="//parttime.vn">Tôi muốn tìm việc</a>
                      </a>
+                  </li> */
+				  ?>
+                  <li class="landing_menu_element">
+                     <a class="landing_menu_link" href="//blog.parttime.vn">Blog</a>
                   </li>
                   <li class="landing_menu_element">
-                     <a class="landing_menu_link" href="">Đăng tuyển</a>
-                  </li>
-                  <li class="landing_menu_element">
-                     <a class="landing_menu_link_button" href="hire_enquiries/first_step/new.html">Bắt đầu</a>
+                     <a class="landing_menu_link_button" href="http://go.parttime.vn/create-job-request">Bắt đầu</a>
                   </li>
                </ul>
             </div>
@@ -116,7 +118,7 @@ get_header();
                      Chúng tôi là "bộ phận nhân sự" đáng tin cậy của bạn
                   </li>
                </ul>
-               <a class="landing_top_section_cta" href="hire_enquiries/first_step/new.html">Đặt tuyển</a>
+               <a class="landing_top_section_cta" href="http://go.parttime.vn/create-job-request">Đặt tuyển</a>
                <div class="sprite sprite_companies_banner_uk"></div>
             </div>
          </section>
@@ -308,10 +310,10 @@ get_header();
                      </h2>
                      <p class="landing_paragraph">
                         Tuyển dụng trực quan với hồ sơ, video ứng viên rõ ràng và những nhận xét từ đồng nghiệp cũ của họ giúp cho bạn có nguồn thông tin đáng tin cậy.
-                        <a class="landing_start_link" href="hire_enquiries/first_step/new.html">Bắt đầu ngay &#8250;</a>
+                        <a class="landing_start_link" href="http://go.parttime.vn/create-job-request">Bắt đầu ngay &#8250;</a>
                      </p>
                   </div>
-                  <img class="landing_qualified_employees_image" src="assets/landing/qualified_employees.png" alt="Qualified employees" />
+                  <img class="landing_qualified_employees_image" src="<?php echo get_template_directory_uri(); ?>/assets/landing/qualified_employees.png" alt="Ứng tiên năng động, tiềm năng" />
                </div>
             </div>
          </section>
@@ -356,7 +358,7 @@ get_header();
                </h2>
                <p class="landing_paragraph">
 				  Chúng tôi phỏng vấn, đánh giá, đào tạo họ cho bạn. Chúng tôi có đội ngũ chuyên gia đa lĩnh vực và cung cấp cho bạn giải pháp đầy đủ cho việc tuyển dụng nhân sự parttime.
-                  <a class="landing_start_link" href="hire_enquiries/first_step/new.html">Bắt đầu &#8250;</a>
+                  <a class="landing_start_link" href="http://go.parttime.vn/create-job-request">Bắt đầu &#8250;</a>
                </p>
             </div>
          </section>
@@ -369,14 +371,15 @@ get_header();
                      </h2>
                      <p class="landing_paragraph">
                         Chúng tôi đảm nhiệm hợp đồng lao động, trả lương, các phụ phí và xuất hóa đơn cho bạn với mọi thông tin rõ ràng và minh bạch. Bạn có thể xem, quản lý từ xa để thấy rõ được mọi thông tin về nguồn lực thuê parttime.
-                        <a class="landing_start_link" href="hire_enquiries/first_step/new.html">Bắt đầu &#8250;</a>
+                        <a class="landing_start_link" href="http://go.parttime.vn/create-job-request">Bắt đầu &#8250;</a>
                      </p>
                   </div>
-                  <img class="landing_digitalized_process_image for_uk" src="assets/landing/site_screenshot_vn.png" alt="Site screenshot uk" />
+                  <img class="landing_digitalized_process_image for_uk" src="<?php echo get_template_directory_uri(); ?>/assets/landing/site_screenshot_vn.png" alt="Hệ thống quản lý nhân sự parttime" />
                </div>
             </div>
          </section>
-         <!--section class="landing_rates">
+		 <?php /*
+         <section class="landing_rates">
             <div class="landing_wrapper">
                <h2 class="landing_heading centered light">
                   Chúng tôi cung cấp dịch vụ
@@ -394,7 +397,7 @@ get_header();
                      <p class="landing_rate_explanation">
                         We will hire the workers for you and will take care of the payroll.
                      </p>
-                     <a class="landing_rate_button" href="hire_enquiries/first_step/new.html">Đặt tuyển</a>
+                     <a class="landing_rate_button" href="http://go.parttime.vn/create-job-request">Đặt tuyển</a>
                   </li>
                   <li class="landing_rate ">
                      <h3 class="landing_rate_title for_freelance">
@@ -403,7 +406,7 @@ get_header();
                      <p class="landing_rate_explanation">
                         We will hire the workers for you and will take care of the payroll.
                      </p>
-                     <a class="landing_rate_button" href="hire_enquiries/first_step/new.html">Đặt tuyển</a>
+                     <a class="landing_rate_button" href="http://go.parttime.vn/create-job-request">Đặt tuyển</a>
                   </li>
                </ul>
             </div>
@@ -465,7 +468,7 @@ get_header();
                   </h2>
                   <p class="landing_paragraph light">
                      Happy workers make for happy businesses. After successfully handling more than 15.000 jobs, we maintain the belief of just and responsible hiring.
-                     <a class="landing_start_link light" href="hire_enquiries/first_step/new.html">Get started &#8250;</a>
+                     <a class="landing_start_link light" href="http://go.parttime.vn/create-job-request">Get started &#8250;</a>
                   </p>
                </div>
                <img class="landing_working_with_us_image" src="assets/landing/companies_working_with_us_uk.png" alt="Companies working with us uk" />
@@ -513,8 +516,6 @@ get_header();
                   </ul>
                </div>
             </div>
-         </section-->
-     
-
-
+         </section> */
+		?>
 <?php get_footer(); ?>
