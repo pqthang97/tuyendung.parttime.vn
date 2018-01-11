@@ -37,7 +37,7 @@
                         Pháp lý
                      </li>
                      <li class="landing_footer_menu_list_element">
-                        <a class="landing_footer_menu_list_link" href="/terms-and-privacy">Thỏa thuận sử dụng</a>
+                        <a class="landing_footer_menu_list_link" href="/term-of-use">Thỏa thuận sử dụng</a>
                      </li>
                      <li class="landing_footer_menu_list_element">
                         <a class="landing_footer_menu_list_link" href="/privacy-policy">Quy tắc hoạt động</a>
@@ -142,10 +142,10 @@
             </a>
             <ul class="landing_menu for_mobile_menu">
                <li class="landing_menu_element">
-                  <a class="landing_menu_link" href="areas-of-activity">Các mẫu công việc</a>
+                  <a class="landing_menu_link" href="/areas-of-activity">Các mẫu công việc</a>
                </li>
                <li class="landing_menu_element">
-                  <a class="landing_menu_link with_dropdown js_contact_link" href="#">Liên lạc</a>
+                  <a class="landing_menu_link with_dropdown js_contact_link" href="<?php echo get_site_url(); ?>">Liên lạc</a>
                   <div class="contact_popup js_contact_popup">
                      <div class="contact_popup_item">
                         <span class="contact_popup_item_heading">
@@ -165,16 +165,28 @@
                         </a>
                         </span>
                      </div>
+					 <div class="contact_popup_item">
+					   <span class="contact_popup_item_heading">
+					   Hỗ trợ:
+					   </span>
+					   <span class="contact_popup_item_content">
+					   <a target="_blank" href="http://support.parttime.vn">
+					   Trung tâm trợ giúp
+					   </a>
+					   </span>
+					</div>
                   </div>
                </li>
+			   <?php /*
                <li class="landing_menu_element">
                   <a class="landing_menu_link" href="//parttime.vn">Tôi muốn tìm việc</a>
-               </li>
+               </li> */
+			   ?>
                <li class="landing_menu_element">
                   <a class="landing_menu_link" href="//blog.parttime.vn">Blog</a>
                </li>
                <li class="landing_menu_element">
-                  <a class="landing_menu_link_button" href="/hire_first">Đăng việc làm</a>
+                  <a class="landing_menu_link_button" href="http://go.parttime.vn/create-job-request">Đăng việc làm</a>
                </li>
             </ul>
          </div>
