@@ -151,7 +151,7 @@ get_header();
             <div class="landing_tilted_content">
                <div class="landing_wrapper">
                   <h2 class="landing_heading centered">
-                     Các vị tri công việc
+                     Các vị trí công việc
                   </h2>
                   <p class="landing_paragraph centered">
                      Hãy chọn vị trí mà bạn đang tuyển theo nhóm công việc bên dưới, chúng tôi hỗ trợ bạn tuyển dụng nhanh chóng. Chúng tôi là chuyên gia trong lĩnh vực việc làm parttime.
@@ -382,7 +382,7 @@ get_header();
                   Tuyển chọn nhanh chóng
                </h2>
                <p class="landing_paragraph">
-				  Chúng tôi phỏng vấn, đánh giá, đào tạo họ cho bạn. Chúng tôi có đội ngũ chuyên gia đa lĩnh vực và cung cấp cho bạn giải pháp đầy đủ cho việc tuyển dụng nhân sự parttime.
+		  Chúng tôi có đội ngũ chuyên gia đa lĩnh vực, đảm bảo mang đến cho bạn giải pháp toàn diện cho việc tuyển dụng nhân sự parttime.
                   <a class="landing_start_link" href="http://go.parttime.vn/create-job-request">Đăng tuyển &#8250;</a>
                </p>
             </div>
