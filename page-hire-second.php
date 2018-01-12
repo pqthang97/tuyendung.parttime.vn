@@ -27,8 +27,8 @@ if(isset($_POST['commit'])) {
   $headers[] = 'Content-Type: text/html; charset=UTF-8';
   $headers[] = 'From: Parttime.vn <'.SEND_FROM.'>';
   $headers[] = 'Bcc: Monitor <'.BCC_MAIL.'>';
-  wp_mail( $wp_session['job_order']['company_email'], "Your request has been received.", $message, $headers, null);
-
+  $mail = wp_mail( $wp_session['job_order']['company_email'], "Your request has been received.", $message, $headers, null);
+  var_dump($mail);
   // $request = array(
   //   'associations' => array(
   //     'associatedCompanyIds' => '650948415',
