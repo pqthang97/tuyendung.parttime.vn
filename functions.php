@@ -412,3 +412,11 @@ function jobrequest_rewrite_rule() {
 	add_rewrite_rule( '^job-request/([^/]*)/?', 'index.php?post_type=job_template&slug=$matches[1]','top' );
 }
 add_action('init', 'jobrequest_rewrite_rule', 10, 0);
+
+function action_wp_mail_failed($wp_error) 
+{
+    return error_log(print_r($wp_error, true));
+}
+          
+// add the action 
+add_action('wp_mail_failed', 'action_wp_mail_failed', 10, 1);
