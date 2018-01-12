@@ -32,6 +32,7 @@ if(isset($_POST['commit'])) {
       'worked_on_a_temporary_agency' => $job_order['worked_with_temp_agency'],
     )
   ));
+  $wp_session['job_order'] = $job_order;
   $wp_session['job_order_id'] = $id;
   wp_redirect(get_site_url() . '/hire_second');
   exit;
@@ -425,11 +426,11 @@ get_header();
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCkBoIOFraTb6SXZXkfbcjXD1-5kqNss4&libraries=places&callback=initAutocomplete"
         async defer></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <script>
-  $( function() {
-    $( "#hire_enquiry_start_date" ).datepicker();
-  } );
-  </script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script>
+    $( function() {
+      $( "#hire_enquiry_start_date" ).datepicker();
+    } );
+    </script>
 <?php get_footer(); ?>

@@ -18,6 +18,16 @@ if(isset($_POST['commit'])) {
   update_post_meta( $wp_session['job_order_id'], 'collective_agreement', $job['collective_agreement'] );
   update_post_meta( $wp_session['job_order_id'], 'special_requirements', $job['special_requirements'] );
   
+  $message = file_get_contents(get_template_directory()  . "/mail/job-order-vn.html");
+  
+  $message = str_replace( array('{{full_name}}', '{{job_title}}', '{{number_of_Vacancy}}', '{{starting_date}}'), 
+                        array($wp_session['job_order']['contact_person_surname'] . ' ' . $wp_session['job_order']['contact_person_name'], $wp_session['job_order']['position_role'], $wp_session['job_order']['vacancies'], $job['interview_date']), $message);
+
+  $headers[] = 'Content-Type: text/html; charset=UTF-8';
+  $headers[] = 'From: Parttime.vn <support@parttime.vn>';
+  $headers[] = 'Bcc: Monitor <quocthang@career.vn>';
+  wp_mail( $wp_session['job_order']['company_email'], "Your request has been received.", $message, $headers, null);
+
   // $request = array(
   //   'associations' => array(
   //     'associatedCompanyIds' => '650948415',
@@ -146,4 +156,11 @@ get_header();
                </div>
             </div>
          </section>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script>
+    $( function() {
+      $( "#hire_enquiry_interview_date" ).datepicker();
+    } );
+    </script>
 <?php get_footer(); ?>
