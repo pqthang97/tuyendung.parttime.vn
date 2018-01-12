@@ -194,9 +194,9 @@ get_header();
                               <label title="N° of vacancies *" for="hire_enquiry_vacancies">Số lượng tuyển *</label>
                               <select class="js_vacancies" data-not-minor="more_than_five_vacancies" required tabindex="4" name="hire_enquiry[vacancies]" id="hire_enquiry_vacancies">
                                  <option value="">Vui lòng chọn</option>
-                                 <option value="one_vacancy">1</option>
-                                 <option value="between_two_and_five_vacancies">Từ 2 đến 5</option>
-                                 <option value="more_than_five_vacancies">Trên 5 người</option>
+                                 <option value="1">1</option>
+                                 <option value="Từ 2 đến 5">Từ 2 đến 5</option>
+                                 <option value="Trên 5 người">Trên 5 người</option>
                               </select>
                            </div>
                            <div class="landing_hire_form_small_input">
@@ -426,11 +426,9 @@ get_header();
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCkBoIOFraTb6SXZXkfbcjXD1-5kqNss4&libraries=places&callback=initAutocomplete"
         async defer></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script>
-    $( function() {
-      $( "#hire_enquiry_start_date" ).datepicker();
-    } );
-    </script>
+        <script>
+        var FormView = modulejs.require('ETTFormView');
+        new FormView();
+
+      </script>
 <?php get_footer(); ?>

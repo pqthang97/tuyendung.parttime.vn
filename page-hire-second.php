@@ -5,7 +5,7 @@
 
 $wp_session = WP_Session::get_instance();
 
-$HAPI = '7019d438-f263-4c4c-82d4-1d2f770d731e';
+$HAPI = '3b1ef1ad-9144-4dc3-8446-3c763af6d208';
 
 
 if(isset($_POST['commit'])) {
@@ -21,11 +21,12 @@ if(isset($_POST['commit'])) {
   $message = file_get_contents(get_template_directory()  . "/mail/job-order-vn.html");
   
   $message = str_replace( array('{{full_name}}', '{{job_title}}', '{{number_of_Vacancy}}', '{{starting_date}}'), 
-                        array($wp_session['job_order']['contact_person_surname'] . ' ' . $wp_session['job_order']['contact_person_name'], $wp_session['job_order']['position_role'], $wp_session['job_order']['vacancies'], $job['interview_date']), $message);
+                        array($wp_session['job_order']['contact_person_surname'] . ' ' . $wp_session['job_order']['contact_person_name'], 
+                        $wp_session['job_order']['position_role'], $wp_session['job_order']['vacancies'], $job['interview_date']), $message);
 
   $headers[] = 'Content-Type: text/html; charset=UTF-8';
-  $headers[] = 'From: Parttime.vn <support@parttime.vn>';
-  $headers[] = 'Bcc: Monitor <quocthang@career.vn>';
+  $headers[] = 'From: Parttime.vn <'.SEND_FROM.'>';
+  $headers[] = 'Bcc: Monitor <'.BCC_MAIL.'>';
   wp_mail( $wp_session['job_order']['company_email'], "Your request has been received.", $message, $headers, null);
 
   // $request = array(
@@ -35,18 +36,103 @@ if(isset($_POST['commit'])) {
   //   )
   // );
 
-  // $result = wp_remote_post('https://api.hubapi.com/companies/v2/companies?hapikey='.$HAPI, array(
-  //   'headers' => array('Accept' => 'application/json', 'Content-Type' => 'application/json'),
-  //   'body' => array(
-  //     'properties' => array(
-  //       'company_name' => $wp_session['job_order']['company_name'],
-  //       'company_size' => $wp_session['job_order']['current_employees'],
-  //     )
-  //   )
-  // ));
+  $result = wp_remote_post('https://api.hubapi.com/companies/v2/companies?hapikey='.$HAPI, array(
+    'headers' => array('Accept' => 'application/json', 'Content-Type' => 'application/json'),
+    'body' => json_encode(array(
+      'properties' => array(
+        array(
+          'name' => 'name',
+          'value' => $wp_session['job_order']['company_name']
+        )
+      )
+    ))
+  ));
 
-  // var_dump($result );
-  // exit;
+  
+  
+  if($result['response']['code'] == 200) {
+    $result = json_decode($result['body']);
+
+    $companyId = $result->companyId;
+
+    $result = wp_remote_post('https://api.hubapi.com/contacts/v1/contact/?hapikey='.$HAPI, array(
+      'headers' => array('Accept' => 'application/json', 'Content-Type' => 'application/json'),
+      'body' => json_encode(array(
+        'properties' => array(
+          array(
+            'property' => 'firstname',
+            'value' => $wp_session['job_order']['contact_person_surname']
+          ),
+          array(
+            'property' => 'lastname',
+            'value' => $wp_session['job_order']['contact_person_name']
+          ),
+          array(
+            'property' => 'email',
+            'value' => $wp_session['job_order']['company_email']
+          )
+        )
+      ))
+    ));
+
+    $result = json_decode($result['body']);
+    $contactId = $result->vid;
+
+    $wp_session['contactId'] = $contactId;
+    $wp_session['companyId'] = $companyId;
+
+    $request = array(
+      'associations' => array(
+        'associatedCompanyIds' => $companyId,
+        'associatedVids' => $contactId,
+      ),
+      'properties' => array(
+        array(
+          'value' => $wp_session['job_order']['contact_person_surname'] . ' ' . $wp_session['job_order']['contact_person_name'],
+          'name' => 'dealname'
+        ),
+        array(
+          'value' => 'appointmentscheduled',
+          'name' => 'dealstage'
+        ),
+        array(
+          'value' => time(),
+          'name' => 'createdate'
+        ),
+        array(
+          'value' => $wp_session['job_order']['position_role'],
+          'name' => 'role'
+        ),
+        array(
+          'value' => $wp_session['job_order']['industry'],
+          'name' => 'industry'
+        ),
+        array(
+          'value' => $job['suggested_salary'] . ' ' . $job['suggested_salary_unit'],
+          'name' => 'salary_offered'
+        ),
+        array(
+          'value' => $wp_session['job_order']['city'],
+          'name' => 'workplace_address'
+        ),
+        array(
+          'value' => $wp_session['job_order']['vacancies'],
+          'name' => 'n_of_vacancies'
+        ),
+        array(
+          'value' => $job['special_requirements'],
+          'name' => 'special_requirements'
+        ),
+      )
+    );
+    $result = wp_remote_post('https://api.hubapi.com/deals/v1/deal?hapikey='.$HAPI, array(
+      'headers' => array('Accept' => 'application/json', 'Content-Type' => 'application/json'),
+      'body' => json_encode($request)
+    ));
+    
+  }
+
+ 
   wp_redirect(get_site_url() . '/hire_completed');
   exit;
 }
@@ -158,9 +244,11 @@ get_header();
          </section>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    
     <script>
-    $( function() {
-      $( "#hire_enquiry_interview_date" ).datepicker();
-    } );
-    </script>
+        var FormView = modulejs.require('ETTFormView');
+        new FormView();
+
+      </script>
+
 <?php get_footer(); ?>

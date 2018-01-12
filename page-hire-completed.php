@@ -5,7 +5,27 @@
 
 $wp_session = WP_Session::get_instance();
 
+$HAPI = '3b1ef1ad-9144-4dc3-8446-3c763af6d208';
 $wp_session['job_template'] = 0;
+$submited = false;
+if(isset($_POST['commit'])) {
+  $call_time = $_POST['hire_enquiry']['call_time'];
+  $result = wp_remote_post('https://api.hubapi.com/engagements/v1/engagements?hapikey='.$HAPI, array(
+    'headers' => array('Accept' => 'application/json', 'Content-Type' => 'application/json'),
+    'body' => json_encode(array(
+      'engagement' => array(
+        'active' => true,
+        'type' => 'CALL',
+        'metadata' => ' ',
+      ),
+      'associations' => array(
+        'contactIds' => $wp_session['contactId'],
+        'companyIds' => $wp_session['companyId']
+      )
+    ))
+  ));
+  $submited = true;
+}
 get_header();
 ?>
 <div class="landing_main_wrapper">
@@ -90,20 +110,28 @@ get_header();
                         Bạn đã gởi đầy đủ thông tin, nếu có thể, hãy cho chúng tôi biết
                         thời gian trống của bạn. Chúng tôi sẽ liên lạc thuận tiện hơn.
                      </p>
-                     <form class="landing_hire_time_form js_call_time_form" action="/hire_enquiries/last_step/2711" accept-charset="UTF-8" data-remote="true" method="post">
-                        <input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="patch" /><input type="hidden" name="authenticity_token" value="/BAdqe1f+9Svd9hYxhyUB+Uk1lELuP1d2dmhMrgTamNin6kmBT9j9LPJdkVp83zoLtfqdj49/Mquy9f/xmyLOA==" />
-                        <div class="landing_hire_form_input js_call_time_input">
-                           <label for="hire_enquiry_call_time">Chọn ngày giờ trống của bạn</label>
-                           <input class="js_date_time_input" tabindex="1" placeholder="Ngày & Giờ" type="text" name="hire_enquiry[call_time]" />
-                        </div>
-                        <button name="button" type="submit" class="landing_hire_time_form_submit" tabindex="2">
-                           <div class="sprite sprite_icon_phone"></div>
-                           Gởi lịch
-                        </button>
-                        <div class="landing_hire_time_form_success">
+                     <form class="landing_hire_time_form " accept-charset="UTF-8" method="post">
+                        <?php 
+                        if(!$submited) {
+                          ?>
+                          <div class="landing_hire_form_input js_call_time_input">
+                            <label for="hire_enquiry_call_time">Chọn ngày giờ trống của bạn</label>
+                            <input class="js_date_time_input" tabindex="1" placeholder="Ngày & Giờ" type="text" name="hire_enquiry[call_time]" required/>
+                          </div>
+                          <button name="commit" type="submit" class="landing_hire_time_form_submit" tabindex="2">
+                            <div class="sprite sprite_icon_phone"></div>
+                            Gởi lịch
+                          </button>
+                          <?php
+                        }
+                        else {
+                          ?>
+                          
                            <span class="sprite sprite_check_green"></span>
-                           Lịch đã gởi thành công
-                        </div>
+                           Lịch đã gởi thành công<br /><br />
+                          <?php
+                        }
+                        ?>
                      </form>
                      <h4>
                         Tuyển nhân viên thật dễ dàng tại Parttime.vn
@@ -131,4 +159,9 @@ get_header();
                </div>
             </div>
          </section>
+         <script>
+        var FormView = modulejs.require('ETTFormView');
+        new FormView();
+
+      </script>
 <?php get_footer(); ?>
