@@ -13,7 +13,11 @@ $categories = get_terms( array(
 $wp_session = WP_Session::get_instance();
 if(isset($_GET['template'])) {
   $wp_session['job_template'] = intval($_GET['template']);
+  ob_clean();
   wp_redirect(get_site_url() . '/hire_first');
+  ?>
+  <script>window.location='<?php echo get_site_url() . '/hire_first'; ?>'</script>
+  <?php
   exit;
 }
 get_header();
