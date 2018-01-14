@@ -189,6 +189,14 @@ include('header-menu.php');
                </div>
             </div>
          </section>
+     <div class="landing_footer_top landing_tilted_section for_footer_top">
+            <div class="landing_tilted_content">
+               <h2 class="landing_heading centered light narrow">
+                  Chúng tôi đồng hành cùng bạn trong việc phát triển nguồn lực nhân sự
+               </h2>
+               <a class="landing_footer_top_button" href="http://go.parttime.vn/create-job-request">Đăng tuyển</a>
+            </div>
+         </div>
   <script>
     
     var LandingView = modulejs.require('MobileAreasView');
