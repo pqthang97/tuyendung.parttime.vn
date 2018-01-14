@@ -199,16 +199,5 @@
   var MenuModule = modulejs.require('MobileMenuModule');
   new MenuModule();
 </script>
-
-<script>
-    if(window.screen.width > 770)
-      var LandingView = modulejs.require('LandingView');
-    else
-      var LandingView = modulejs.require('MobileLandingView');
-
-    new LandingView();
-
-</script>
-
    </body>
 </html>
