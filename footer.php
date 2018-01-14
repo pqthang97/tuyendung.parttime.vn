@@ -1,4 +1,7 @@
-<div class="landing_footer <?php if(is_page( 'areas-of-activity' )) { echo 'for_areas'; } ?>">
+<div class="landing_footer
+	    <?php if(is_page( 'areas-of-activity' )) { echo 'for_areas'; } ?>
+	    <?php if(is_page( array( 'job-request', 'job-request-detail', 'job-request-completed' ) ) ) { echo 'for_hire_form'; } ?>
+	    ">
             <div class="landing_wrapper">
                <div class="landing_footer_top_section">
                   <div class="landing_footer_caption_wrapper">
