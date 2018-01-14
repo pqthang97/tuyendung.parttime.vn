@@ -189,7 +189,7 @@ include('header-menu.php');
                </div>
             </div>
          </section>
-     <div class="landing_footer_top landing_tilted_section for_footer_top">
+         <div class="landing_footer_top landing_tilted_section for_footer_top">
             <div class="landing_tilted_content">
                <h2 class="landing_heading centered light narrow">
                   Chúng tôi đồng hành cùng bạn trong việc phát triển nguồn lực nhân sự
@@ -197,13 +197,7 @@ include('header-menu.php');
                <a class="landing_footer_top_button" href="http://go.parttime.vn/create-job-request">Đăng tuyển</a>
             </div>
          </div>
-  <script>
-    
-    var LandingView = modulejs.require('MobileAreasView');
-    new LandingView();
-
-</script>
-  <script type="text/javascript">
+         <script type="text/javascript">
          $(function(){
             $('a[href*="#"]:not([href="#"])').click(function() {
                 if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
