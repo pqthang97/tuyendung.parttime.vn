@@ -21,8 +21,8 @@ if(isset($_POST['commit'])) {
         'contactIds' => $wp_session['contactId'],
         'companyIds' => $wp_session['companyId']
       ),
-      "metadata": {
-        "body": "Schedule call booking on website"
+      'metadata': {
+        'body': 'Schedule call booking on website'
       }
     ))
   ));
