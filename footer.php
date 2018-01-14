@@ -199,5 +199,44 @@
   var MenuModule = modulejs.require('MobileMenuModule');
   new MenuModule();
 </script>
+<div class="fb-plugin-chat-container"></div>
+<script>
+function detectIsMobile(plusWidthScreen) {
+	if (plusWidthScreen && screen && screen.width)
+		return (screen.width <= 699 || navigator.userAgent.match(/(iPad|iPhone|iPod|Android)/g) ? true : false);
+	else
+		return (navigator.userAgent.match(/(iPad|iPhone|iPod|Android)/g) ? true : false);
+}
+(function(d){
+	var appId = '1487995581412084';
+	var pageId = '690482207700261'
+	var ref = 'ParttimeAPP'
+
+	var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+	js = d.createElement('script'); js.id = id; js.async = true;
+	js.src = "https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&appId=" + appId + "&version=v2.0";
+	js.onload = function() {
+		$('.fb-plugin-chat-container').html('<div class="fb-customerchat" page_id="' + pageId + '" ref="' + ref + '" minimized="true"></div>')
+
+		if(detectIsMobile(true)) {
+			var interval = setInterval(function() {
+				var fbDialog = $('#fb-root .fb_dialog')
+
+				if(fbDialog && fbDialog.length > 0) {
+					fbDialog
+					.css('display', 'inline')
+					.html('<img src="//staticxx.facebook.com/images/messaging/commerce/livechat/MessengerIcon.png" height="60" width="60" alt="" class="img">')
+					.click(function(e) {
+						window.open('//m.me/' + pageId + '?ref=' + ref, '_blank');
+					});
+
+					clearInterval(interval);
+				}
+			}, 250);
+		}
+	}
+	d.getElementsByTagName('head')[0].appendChild(js);
+}(document));
+</script>
    </body>
 </html>
