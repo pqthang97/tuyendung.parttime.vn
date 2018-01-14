@@ -215,6 +215,10 @@ include('header-menu.php');
             });
          });
       </script>
+     <script>
+     var LandingView = modulejs.require('MobileAreasView');
+     new LandingView();
+     </script>
       <script type="text/javascript">
          var clearSelected = () => {
             $('.js_scroll_link').removeClass('selected');
