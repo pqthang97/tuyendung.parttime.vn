@@ -12,21 +12,9 @@
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body <?php body_class(); ?>>
-  <script>
-window.fbAsyncInit = function() {
-FB.init({
-appId : '198438220674493',
-autoLogAppEvents : true,
-xfbml : true,
-version : 'v2.11’
-});
-};
-(function(d, s, id){
-var js, fjs = d.getElementsByTagName(s)[];
-if (d.getElementById(id)) {return;}
-js = d.createElement(s); js.id = id;
-js.src = "https://connect.facebook.net/vi_VN/sdk.js";
-fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script’, 'facebook-jssdk’));
+<script data-skip-moving="true">
+        (function(w,d,u){
+                var s=d.createElement('script');s.async=1;s.src=u+'?'+(Date.now()/60000|0);
+                var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+        })(window,document,'https://cdn.bitrix24.com/b5880041/crm/site_button/loader_2_kcqgx0.js');
 </script>
-<div class="fb-customerchat" page_id="690482207700261"></div>
