@@ -462,3 +462,12 @@ get_header();
 	  <a class="landing_footer_top_button" href="http://go.parttime.vn/create-job-request">Đăng tuyển</a>
 	</div>
 <?php get_footer(); ?>
+	      <script>
+    if(window.screen.width > 770)
+      var LandingView = modulejs.require('LandingView');
+    else
+      var LandingView = modulejs.require('MobileLandingView');
+
+    new LandingView();
+
+</script>
