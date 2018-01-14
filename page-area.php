@@ -14,9 +14,9 @@ $wp_session = WP_Session::get_instance();
 if(isset($_GET['template'])) {
   $wp_session['job_template'] = intval($_GET['template']);
   ob_clean();
-  wp_redirect(get_site_url() . '/hire_first');
+  wp_redirect(get_site_url() . '/job-request');
   ?>
-  <script>window.location='<?php echo get_site_url() . '/hire_first'; ?>'</script>
+  <script>window.location='<?php echo get_site_url() . '/job-request'; ?>'</script>
   <?php
   exit;
 }
