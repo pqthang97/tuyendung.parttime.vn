@@ -1,4 +1,4 @@
-<div class="landing_footer ">
+<div class="landing_footer <?php is_page( 'areas-of-activity' ) { echo 'for_areas'; } ?>">
             <div class="landing_wrapper">
                <div class="landing_footer_top_section">
                   <div class="landing_footer_caption_wrapper">
