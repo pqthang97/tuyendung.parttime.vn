@@ -18,7 +18,7 @@
                         <a class="landing_footer_menu_list_link" target="_blank" href="http://go.parttime.vn/gioi-thieu">Giới thiệu</a>
                      </li>
                      <li class="landing_footer_menu_list_element">
-                        <a class="landing_footer_menu_list_link" target="_blank" href="http://go.parttime.vn/blog-tuyen-dung">Blog tuyển dụng</a>
+                        <a class="landing_footer_menu_list_link" target="_blank" href="//blog.parttime.vn/tuyen-dung">Blog tuyển dụng</a>
                      </li>
                      <li class="landing_footer_menu_list_element">
                         <a class="landing_footer_menu_list_link" target="_blank" href="http://go.parttime.vn/tham-gia-parttime-team">Tham gia Parttime.vn</a>
@@ -40,10 +40,10 @@
                         Pháp lý
                      </li>
                      <li class="landing_footer_menu_list_element">
-                        <a class="landing_footer_menu_list_link" href="/terms-of-use">Thỏa thuận sử dụng</a>
+                        <a class="landing_footer_menu_list_link" href="#/terms-of-use">Thỏa thuận sử dụng</a>
                      </li>
                      <li class="landing_footer_menu_list_element">
-                        <a class="landing_footer_menu_list_link" href="/privacy-policy">Quy tắc hoạt động</a>
+                        <a class="landing_footer_menu_list_link" href="#/privacy-policy">Quy tắc hoạt động</a>
                      </li>
                   </ul>
                   <ul class="landing_footer_menu_list for_mobile">
