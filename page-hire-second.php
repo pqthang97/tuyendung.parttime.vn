@@ -133,7 +133,7 @@ if(isset($_POST['commit'])) {
   }
 
  
-  wp_redirect(get_site_url() . '/hire_completed');
+  wp_redirect(get_site_url() . '/job-request-completed');
   exit;
 }
 
