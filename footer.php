@@ -70,7 +70,7 @@
                         Tham gia tại
                      </li>
                      <li class="landing_footer_menu_list_element with_icon">
-                        <a class="landing_footer_menu_list_icon_link" target="_blank" href="">
+                        <a class="landing_footer_menu_list_icon_link" target="_blank" href="https://fb.com/ParttimeAPP">
                         <span class="landing_footer_menu_list_icon sprite sprite_icon_facebook">
                         facebook
                         </span>
