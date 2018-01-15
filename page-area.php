@@ -126,7 +126,7 @@ include('header-menu.php');
                     <?php echo $post->post_title; ?>
                     </h3>
                     <div class="landing_area_of_activity_explanation for_hostelry">
-                    <?php echo $post->post_content; ?><br />
+                    <?php echo $post->post_content; ?>
                       <a class="landing_area_of_activity_explanation_button" href="#" onClick="window.location = '<?php echo get_site_url().'/areas-of-activity?template='.$post->ID; ?>'; return false;">Đăng tuyển <?php echo $post->post_title; ?></a>
                     </div>
                 </div>
