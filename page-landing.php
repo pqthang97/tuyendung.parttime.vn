@@ -261,7 +261,7 @@ get_header();
                      <span class="sprite sprite_icon_interviews"></span>
                   </div>
                   <span class="landing_service_text">
-                  Trả lời phỏng vấn bằng video trực quan
+                  Trả lời phỏng vấn bằng video
                   </span>
                </li>
                <li class="landing_service">
