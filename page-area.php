@@ -134,13 +134,13 @@ include('header-menu.php');
               }
               ?>
                 
-              <ul class="landing_areas_of_activity_buttons for_mobile narrow">
-                <li class="landing_areas_of_activity_button narrow selected js_loop_mobile_area"></li>
-                <li class="landing_areas_of_activity_button narrow js_loop_mobile_area"></li>
-                <li class="landing_areas_of_activity_button narrow js_loop_mobile_area"></li>
-                <li class="landing_areas_of_activity_button narrow js_loop_mobile_area"></li>
-              </ul>
           </div>
+          <ul class="landing_areas_of_activity_buttons for_mobile narrow">
+             <li class="landing_areas_of_activity_button narrow selected js_loop_mobile_area"></li>
+             <li class="landing_areas_of_activity_button narrow js_loop_mobile_area"></li>
+             <li class="landing_areas_of_activity_button narrow js_loop_mobile_area"></li>
+             <li class="landing_areas_of_activity_button narrow js_loop_mobile_area"></li>
+           </ul>
         </div>
         <?php if($keycategory % 2 !== 0) {
       ?>
