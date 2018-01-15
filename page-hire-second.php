@@ -27,7 +27,7 @@ if(isset($_POST['commit'])) {
   $headers[] = 'Content-Type: text/html; charset=UTF-8';
   $headers[] = 'From: Parttime.vn <'.SEND_FROM.'>';
   $headers[] = 'Bcc: Monitor <'.BCC_MAIL.'>';
-  $mail = wp_mail( $wp_session['job_order']['company_email'], "Your request has been received.", $message, $headers, null);
+  $mail = wp_mail( $wp_session['job_order']['company_email'], "Chúng tôi đã nhận được yêu cầu tuyển dụng.", $message, $headers, null);
 
   // $request = array(
   //   'associations' => array(
@@ -133,7 +133,7 @@ if(isset($_POST['commit'])) {
   }
 
  
-  wp_redirect(get_site_url() . '/hire_completed');
+  wp_redirect(get_site_url() . '/job-request-completed');
   exit;
 }
 
@@ -185,8 +185,8 @@ get_header();
                               <label for="hire_enquiry_suggested_salary_unit">&nbsp;</label>
                               <select tabindex="3" required name="hire_enquiry[suggested_salary_unit]" id="hire_enquiry_suggested_salary_unit">
                                  <option value="hour">Giờ</option>
-                                 <option value="month">Tuần</option>
-                                 <option value="year">Tháng</option>
+                                 <option value="week">Tuần</option>
+                                 <option selected="selected" value="month">Tháng</option>
                               </select>
                            </div>
                         </div>
@@ -212,7 +212,7 @@ get_header();
                               <select tabindex="7" required name="hire_enquiry[contract_duration_unit]" id="hire_enquiry_contract_duration_unit">
                                  <option value="hours">Giờ</option>
                                  <option value="weeks">Tuần</option>
-                                 <option value="months">Tháng</option>
+                                 <option value="months" selected="selected">Tháng</option>
                               </select>
                            </div>
                         </div>
@@ -242,9 +242,6 @@ get_header();
                </div>
             </div>
          </section>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    
     <script>
         var FormView = modulejs.require('ETTFormView');
         new FormView();

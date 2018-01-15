@@ -14,9 +14,9 @@ $wp_session = WP_Session::get_instance();
 if(isset($_GET['template'])) {
   $wp_session['job_template'] = intval($_GET['template']);
   ob_clean();
-  wp_redirect(get_site_url() . '/hire_first');
+  wp_redirect(get_site_url() . '/job-request');
   ?>
-  <script>window.location='<?php echo get_site_url() . '/hire_first'; ?>'</script>
+  <script>window.location='<?php echo get_site_url() . '/job-request'; ?>'</script>
   <?php
   exit;
 }
@@ -126,21 +126,26 @@ include('header-menu.php');
                     <?php echo $post->post_title; ?>
                     </h3>
                     <div class="landing_area_of_activity_explanation for_hostelry">
+<<<<<<< HEAD
                     <?php echo $post->post_content; ?><br />
                       <a class="landing_area_of_activity_explanation_button" href="#" onClick="window.location = '<?php echo get_site_url().'/areas-of-activity?template='.$post->ID; ?>'">Request <?php echo $post->post_title; ?></a>
+=======
+                      <?php echo $post->post_content; ?>
+                      <a class="landing_area_of_activity_explanation_button" href="<?php echo get_site_url().'/areas-of-activity?template='.$post->ID; ?>">Đăng tuyển <?php echo $post->post_title; ?></a>
+>>>>>>> 2b2a64f5584daf39cabf84d14f7c902e7a03d830
                     </div>
                 </div>
               <?php 
               }
               ?>
                 
-              <ul class="landing_areas_of_activity_buttons for_mobile narrow">
-                <li class="landing_areas_of_activity_button narrow selected js_loop_mobile_area"></li>
-                <li class="landing_areas_of_activity_button narrow js_loop_mobile_area"></li>
-                <li class="landing_areas_of_activity_button narrow js_loop_mobile_area"></li>
-                <li class="landing_areas_of_activity_button narrow js_loop_mobile_area"></li>
-              </ul>
           </div>
+          <ul class="landing_areas_of_activity_buttons for_mobile narrow">
+             <li class="landing_areas_of_activity_button narrow selected js_loop_mobile_area"></li>
+             <li class="landing_areas_of_activity_button narrow js_loop_mobile_area"></li>
+             <li class="landing_areas_of_activity_button narrow js_loop_mobile_area"></li>
+             <li class="landing_areas_of_activity_button narrow js_loop_mobile_area"></li>
+           </ul>
         </div>
         <?php if($keycategory % 2 !== 0) {
       ?>
@@ -189,13 +194,15 @@ include('header-menu.php');
                </div>
             </div>
          </section>
-  <script>
-    
-    var LandingView = modulejs.require('MobileAreasView');
-    new LandingView();
-
-</script>
-  <script type="text/javascript">
+         <div class="landing_footer_top landing_tilted_section for_footer_top">
+            <div class="landing_tilted_content">
+               <h2 class="landing_heading centered light narrow">
+                  Chúng tôi đồng hành cùng bạn trong việc phát triển nguồn lực nhân sự
+               </h2>
+               <a class="landing_footer_top_button" href="http://go.parttime.vn/create-job-request">Đăng tuyển</a>
+            </div>
+         </div>
+         <script type="text/javascript">
          $(function(){
             $('a[href*="#"]:not([href="#"])').click(function() {
                 if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
@@ -213,6 +220,10 @@ include('header-menu.php');
             });
          });
       </script>
+     <script>
+     var LandingView = modulejs.require('MobileAreasView');
+     new LandingView();
+     </script>
       <script type="text/javascript">
          var clearSelected = () => {
             $('.js_scroll_link').removeClass('selected');

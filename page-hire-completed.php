@@ -15,12 +15,14 @@ if(isset($_POST['commit'])) {
     'body' => json_encode(array(
       'engagement' => array(
         'active' => true,
-        'type' => 'CALL',
-        'metadata' => ' ',
+        'type' => 'TASK'
       ),
       'associations' => array(
         'contactIds' => $wp_session['contactId'],
         'companyIds' => $wp_session['companyId']
+      ),
+      'metadata' => array(
+        'body' => 'Schedule call booking on website'
       )
     ))
   ));

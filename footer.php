@@ -1,4 +1,7 @@
-<div class="landing_footer ">
+<div class="landing_footer
+	    <?php if(is_page( 'areas-of-activity' )) { echo 'for_areas'; } ?>
+	    <?php if(is_page( array( 'job-request', 'job-request-detail', 'job-request-completed' ) ) ) { echo 'for_hire_form'; } ?>
+	    ">
             <div class="landing_wrapper">
                <div class="landing_footer_top_section">
                   <div class="landing_footer_caption_wrapper">
@@ -15,7 +18,7 @@
                         <a class="landing_footer_menu_list_link" target="_blank" href="http://go.parttime.vn/gioi-thieu">Giới thiệu</a>
                      </li>
                      <li class="landing_footer_menu_list_element">
-                        <a class="landing_footer_menu_list_link" target="_blank" href="http://go.parttime.vn/blog-tuyen-dung">Blog tuyển dụng</a>
+                        <a class="landing_footer_menu_list_link" target="_blank" href="//blog.parttime.vn/tuyen-dung">Blog tuyển dụng</a>
                      </li>
                      <li class="landing_footer_menu_list_element">
                         <a class="landing_footer_menu_list_link" target="_blank" href="http://go.parttime.vn/tham-gia-parttime-team">Tham gia Parttime.vn</a>
@@ -37,10 +40,10 @@
                         Pháp lý
                      </li>
                      <li class="landing_footer_menu_list_element">
-                        <a class="landing_footer_menu_list_link" href="/terms-of-use">Thỏa thuận sử dụng</a>
+                        <a class="landing_footer_menu_list_link" href="#/terms-of-use">Thỏa thuận sử dụng</a>
                      </li>
                      <li class="landing_footer_menu_list_element">
-                        <a class="landing_footer_menu_list_link" href="/privacy-policy">Quy tắc hoạt động</a>
+                        <a class="landing_footer_menu_list_link" href="#/privacy-policy">Quy tắc hoạt động</a>
                      </li>
                   </ul>
                   <ul class="landing_footer_menu_list for_mobile">
@@ -67,7 +70,7 @@
                         Tham gia tại
                      </li>
                      <li class="landing_footer_menu_list_element with_icon">
-                        <a class="landing_footer_menu_list_icon_link" target="_blank" href="">
+                        <a class="landing_footer_menu_list_icon_link" target="_blank" href="https://fb.com/ParttimeAPP">
                         <span class="landing_footer_menu_list_icon sprite sprite_icon_facebook">
                         facebook
                         </span>
@@ -177,11 +180,9 @@
 					</div>
                   </div>
                </li>
-			   <?php /*
                <li class="landing_menu_element">
-                  <a class="landing_menu_link" href="//parttime.vn">Tôi muốn tìm việc</a>
-               </li> */
-			   ?>
+                  <a class="landing_menu_link" target="_blank" href="//parttime.vn">Tôi muốn tìm việc</a>
+               </li>
                <li class="landing_menu_element">
                   <a target="_blank" class="landing_menu_link" href="//blog.parttime.vn">Blog</a>
                </li>
@@ -196,16 +197,44 @@
   var MenuModule = modulejs.require('MobileMenuModule');
   new MenuModule();
 </script>
-
+<div class="fb-plugin-chat-container"></div>
 <script>
-    if(window.screen.width > 770)
-      var LandingView = modulejs.require('LandingView');
-    else
-      var LandingView = modulejs.require('MobileLandingView');
+function detectIsMobile(plusWidthScreen) {
+	if (plusWidthScreen && screen && screen.width)
+		return (screen.width <= 699 || navigator.userAgent.match(/(iPad|iPhone|iPod|Android)/g) ? true : false);
+	else
+		return (navigator.userAgent.match(/(iPad|iPhone|iPod|Android)/g) ? true : false);
+}
+(function(d){
+	var appId = '1487995581412084';
+	var pageId = '690482207700261'
+	var ref = 'ParttimeAPP'
 
-    new LandingView();
+	var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+	js = d.createElement('script'); js.id = id; js.async = true;
+	js.src = "https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&appId=" + appId + "&version=v2.0";
+	js.onload = function() {
+		$('.fb-plugin-chat-container').html('<div class="fb-customerchat" page_id="' + pageId + '" ref="' + ref + '" minimized="true"></div>')
 
+		if(detectIsMobile(true)) {
+			var interval = setInterval(function() {
+				var fbDialog = $('#fb-root .fb_dialog')
+
+				if(fbDialog && fbDialog.length > 0) {
+					fbDialog
+					.css('display', 'inline')
+					.html('<img src="//staticxx.facebook.com/images/messaging/commerce/livechat/MessengerIcon.png" height="60" width="60" alt="" class="img">')
+					.click(function(e) {
+						window.open('//m.me/' + pageId + '?ref=' + ref, '_blank');
+					});
+
+					clearInterval(interval);
+				}
+			}, 250);
+		}
+	}
+	d.getElementsByTagName('head')[0].appendChild(js);
+}(document));
 </script>
-
    </body>
 </html>

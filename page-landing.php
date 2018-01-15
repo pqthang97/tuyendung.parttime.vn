@@ -51,12 +51,10 @@ get_header();
                         </div>
                      </div>
                   </li>
-				  <?php /*
                   <li class="landing_menu_element">
-                     <a class="landing_menu_link" href="//parttime.vn">Tôi muốn tìm việc</a>
-                  </li> */
-				  ?>
-				  <li class="landing_menu_element">
+                     <a class="landing_menu_link" target="_blank" href="//parttime.vn">Tôi muốn tìm việc</a>
+                  </li>
+	          <li class="landing_menu_element">
                      <a target="_blank" class="landing_menu_link" href="//blog.parttime.vn">Blog</a>
                   </li>
                   <li class="landing_menu_element">
@@ -261,7 +259,7 @@ get_header();
                      <span class="sprite sprite_icon_interviews"></span>
                   </div>
                   <span class="landing_service_text">
-                  Trả lời phỏng vấn bằng video trực quan
+                  Trả lời phỏng vấn bằng video
                   </span>
                </li>
                <li class="landing_service">
@@ -455,4 +453,19 @@ get_header();
             </div>
          </section> */
 		?>
+	 <div class="landing_footer_top">
+	  <h2 class="landing_heading centered light narrow">
+	    Chúng tôi đồng hành cùng bạn trong việc phát triển nguồn lực nhân sự
+	  </h2>
+	  <a class="landing_footer_top_button" href="http://go.parttime.vn/create-job-request">Đăng tuyển</a>
+	</div>
 <?php get_footer(); ?>
+	      <script>
+    if(window.screen.width > 770)
+      var LandingView = modulejs.require('LandingView');
+    else
+      var LandingView = modulejs.require('MobileLandingView');
+
+    new LandingView();
+
+</script>

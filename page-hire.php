@@ -34,7 +34,7 @@ if(isset($_POST['commit'])) {
   ));
   $wp_session['job_order'] = $job_order;
   $wp_session['job_order_id'] = $id;
-  wp_redirect(get_site_url() . '/hire_second');
+  wp_redirect(get_site_url() . '/job-request-detail');
   exit;
 }
 get_header();

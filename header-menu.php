@@ -42,11 +42,9 @@
 				</div>
               </div>
           </li>
-		  <?php /*
           <li class="landing_menu_element">
-              <a class="landing_menu_link" href="//parttime.vn">Tôi muốn tìm việc</a>
-          </li> */
-		  ?>
+              <a class="landing_menu_link" target="_blank" href="//parttime.vn">Tôi muốn tìm việc</a>
+          </li>
           <li class="landing_menu_element">
               <a target="_blank" class="landing_menu_link" href="//blog.parttime.vn">Blog</a>
           </li>
