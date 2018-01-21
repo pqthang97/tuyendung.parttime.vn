@@ -57,8 +57,8 @@ get_header();
                            Phone:
                            </span>
                            <span class="contact_popup_item_content">
-                           <a href="tel:+938373899">
-                           +938373899
+                           <a href="tel:02871099168">
+                           02871099168
                            </a>
                            </span>
                         </div>
@@ -96,7 +96,7 @@ get_header();
                         Nếu bạn có bất kỳ câu hỏi gì, vui lòng liên lạc tại:
                         <br>
                         <strong class="big">
-                        +938373899
+                        02871099168
                         </strong>
                         <br>
                         <strong class="big">
@@ -151,7 +151,7 @@ get_header();
                      Nếu bạn có bất kỳ câu hỏi gì, vui lòng liên lạc tại:
                      <br>
                      <strong class="big">
-                     +938373899
+                     02871099168
                      </strong>
                      <br>
                      <strong class="big">
