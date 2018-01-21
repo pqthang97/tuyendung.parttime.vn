@@ -34,8 +34,8 @@ get_header();
                            Phone:
                            </span>
                            <span class="contact_popup_item_content">
-                           <a href="tel:+84938373899">
-                           +84938373899
+                           <a href="tel:02871099168">
+                           02871099168
                            </a>
                            </span>
                         </div>
@@ -89,8 +89,8 @@ get_header();
                            Phone:
                            </span>
                            <span class="contact_popup_item_content">
-                           <a href="tel:+84938373899">
-                           +84938373899
+                           <a href="tel:02871099168">
+                           02871099168
                            </a>
                            </span>
                         </div>
