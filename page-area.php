@@ -180,8 +180,8 @@ include('header-menu.php');
                            support@parttime.vn
                            </a>
                            <br>
-                           <a href="tel:+84938373899" class="landing_area_of_activity_explanation_link">
-                           +84938373899
+                           <a href="tel:02871099168" class="landing_area_of_activity_explanation_link">
+                           02871099168
                            </a>
                         </div>
                      </div>
