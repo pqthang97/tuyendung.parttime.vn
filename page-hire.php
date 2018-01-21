@@ -299,7 +299,7 @@ get_header();
                            <p>Thông tin liên lạc của bạn sẽ không xuất hiện bên ngoài, chúng tôi chỉ liên lạc để xác thực.</p>
                            <p>Liên lạc với chúng tôi nếu bạn cần hỗ trợ thêm bất cứ điều gì tại:
                               <br>
-                              <a href="tel:+84938373899">+84938373899</a>
+                              <a href="tel:02871099168">02871099168</a>
                               <br>
                               <a href="">support@parttime.vn</a>
                            </p>
