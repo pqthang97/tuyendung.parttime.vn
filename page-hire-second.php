@@ -229,7 +229,7 @@ get_header();
                            <br><br><br>
                            Hãy liên lạc với chúng tôi nếu bạn cần bất kỳ sự trợ giúp.
                            <br>
-                           <a href="tel:+84938373899">+84938373899</a>
+                           <a href="tel:02871099168">02871099168</a>
                            <br>
                            <a href="mailto:support@parttime.vn">support@parttime.vn</a>
                         </div>
